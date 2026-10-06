@@ -24,6 +24,7 @@ header {
     grid-area: nav;
     position: relative;
     background-color: #002346;
+
     
 }
 
@@ -76,7 +77,7 @@ nav {
         border-right: 5px solid #ffc425;
         background-color: #002346;
         top: 0px;
-        height: 450px;
+        height: fit-content;
         
     }
     .nav-contianer:hover .nav-button {
