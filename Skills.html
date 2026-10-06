@@ -3,98 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Master.css">
     <title>Skills</title>
 </head>
 <body>
 
-    <header class="row">
-        <h1 class="row">Christian Phillip Olsen</h1>
-        <p class="row">Software Engineering Student at Northern Arizona University</p>
+    <header class="bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Christian Phillip Olsen</h1>
+                    <p class="lead">Software Engineering Student at Northern Arizona University</p>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="nav-contianer">
-        <nav class="col">
-            <ul class="row">
-                <li><a href="index.html">Summary</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Running.html">Running</a></li>
-                <li><a href="Poetry.html">Poetry</a></li>
-                <li><a href="Contact.html">Contact Information</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Summary</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutMe.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="Education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="Running.html">Running</a></li>
+                <li class="nav-item"><a class="nav-link" href="Poetry.html">Poetry</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Information</a></li>
             </ul>
-            <a class="resume" href="https://docs.google.com/document/d/1mn1eNetuWI7vO4YYlXjGNv_hZwvM4GlTqqZtdAN6zBE/export?format=pdf">Download Resume</a>
-        </nav>
-        <div class="nav-button"> NAV </div>
-    </div>
+            <a class="resume btn btn-warning" href="https://docs.google.com/document/d/1mn1eNetuWI7vO4YYlXjGNv_hZwvM4GlTqqZtdAN6zBE/export?format=pdf">Download Resume</a>
+        </div>
+    </nav>
 
-    <main>
+    <main class="container">
+        <div class="row">
+            <div class="col">
         <h2>Skills</h2>
 
         <p>Here is the toolkit i have built up across school and work.</p>
 
-        <div class="skills">
-            <div class="skill">
-                <h3>HTML and CSS</h3>
-                <p>Semantic markup, Grid and Flexbox layouts.</p>
+        <div class="skills row">
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">HTML and CSS</h3>
+                        <p class="card-text">Semantic markup, Grid and Flexbox layouts.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>Java</h3>
-                <p>Coursework in software engineering at NAU.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">Java</h3>
+                        <p class="card-text">Coursework in software engineering at NAU.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>SEO Marketing</h3>
-                <p>A year and a half of client work at CadenceSEO.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">SEO Marketing</h3>
+                        <p class="card-text">A year and a half of client work at CadenceSEO.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>IT Support</h3>
-                <p>TestOut PC Pro certified and CompTIA A+ Part 1.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">IT Support</h3>
+                        <p class="card-text">TestOut PC Pro certified and CompTIA A+ Part 1.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>CAD Modeling</h3>
-                <p>CSWA certified in SolidWorks, plus 3D modeling.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">CAD Modeling</h3>
+                        <p class="card-text">CSWA certified in SolidWorks, plus 3D modeling.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>Audio Video Lighting</h3>
-                <p>Seven years running AVL for live shows.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">Audio Video Lighting</h3>
+                        <p class="card-text">Seven years running AVL for live shows.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>Video Editing</h3>
-                <p>Editing since i was eleven years old.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">Video Editing</h3>
+                        <p class="card-text">Editing since i was eleven years old.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>Game Development</h3>
-                <p>Building small games as a side project.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">Game Development</h3>
+                        <p class="card-text">Building small games as a side project.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>IoT Devices</h3>
-                <p>Second in the state of Arizona at SkillsUSA.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">IoT Devices</h3>
+                        <p class="card-text">Second in the state of Arizona at SkillsUSA.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="skill">
-                <h3>Leadership</h3>
-                <p>Two years as a team lead and trainer at Wendy's.</p>
+            <div class="col-md-4">
+                <div class="skill card">
+                    <div class="card-body">
+                        <h3 class="card-title">Leadership</h3>
+                        <p class="card-text">Two years as a team lead and trainer at Wendy's.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
     </main>
 
-    <footer class="col">
-        <p class="note" class="row">I have a very little amount of experience with HTML and CSS but not Javascript, Node, or SQL so i am VERY excited to learn!</p>
-
-        <div class="contact" class="col">
-            <h3 class="col">Contact Information</h3>
-            <p>Gmail: <a href="mailto:cpom762@gmail.com">cpom762@gmail.com</a></p>
-            <p>School: <a href="mailto:cpo59@nau.edu">cpo59@nau.edu</a></p>
-            <p>Discord: lonevex</p>
+    <footer class="bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="note">I have a very little amount of experience with HTML and CSS but not Javascript, Node, or SQL so i am VERY excited to learn!</p>
+                </div>
+                <div class="contact col-md-6">
+                    <h3>Contact Information</h3>
+                    <p>Gmail: <a href="mailto:cpom762@gmail.com">cpom762@gmail.com</a></p>
+                    <p>School: <a href="mailto:cpo59@nau.edu">cpo59@nau.edu</a></p>
+                    <p>Discord: lonevex</p>
+                </div>
+            </div>
         </div>
     </footer>
 
