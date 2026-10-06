@@ -1,111 +1,42 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "nav    main"
-        "footer footer";
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 120px 1fr 150px;
-    height: 100vh;
+header,
+footer {
+    --bs-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.25));
 }
 
 header {
-    grid-area: header;
     background-color: #003466;
     border-bottom: 5px solid #ffc425;
     padding: 20px;
 }
 
-.nav-contianer {
-    grid-area: nav;
-    position: relative;
+.navbar {
     background-color: #002346;
-    
-}
-
-nav {
-    padding: 20px;
-}
-
-.nav-button {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 250px;
-    width: 60px;
-    height: 30px;
-    background-color: #ffc425;
-    color: #002346;
-    font-size: x-large;
-    border-radius: 0 0 15px 15px;
-    text-align: center;
-}
-
-@media (max-width: 793px){
-
-    .nav-contianer {
-        position:absolute;
-        top: 120px;
-    }
-    
-    nav {
-        transform: translateX(-120px);
-        position:absolute;
-        top: 120px;
-    }
-
-    body {
-        grid-template-areas:
-            "header header"
-            "main main"
-            "footer footer"
-    }
-
-    .nav-button {
-        left: 0px;
-    }
-
-    .nav-contianer:hover nav {
-        transform: translateX(0px);
-        transition: transform 0.4s ease-in-out;
-        border-bottom: 5px solid #ffc425;
-        border-right: 5px solid #ffc425;
-        background-color: #002346;
-        top: 0px;
-        height: 450px;
-        
-    }
-    .nav-contianer:hover .nav-button {
-        transform: translateX(140px);
-        transition: transform 0.4s ease-in-out;
-    }
-    nav .resume {
-        padding: 7px;
-    }
-
-
 }
 
 main {
-    grid-area: main;
     background-color: #ffffff;
     padding: 20px;
-    overflow-y: scroll;
 }
 
 footer {
-    grid-area: footer;
     background-color: #003466;
     border-top: 5px solid #ffc425;
+    margin-top: auto;
     padding: 20px;
     position: relative;
 }
 
 header h1 {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     color: #ffffff;
 }
@@ -143,11 +74,6 @@ nav a:hover {
 }
 
 .resume {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-
     background-color: #ffc425;
     color: #003466;
     padding: 12px;
@@ -193,6 +119,7 @@ main img {
 
 main video {
     width: 500px;
+    max-width: 100%;
     border: 3px solid #003466;
 }
 
@@ -201,7 +128,7 @@ table {
     border-collapse: collapse;
 }
 
-th {
+.table th {
     background-color: #003466;
     color: #ffc425;
     border: 1px solid #003466;
@@ -223,10 +150,8 @@ td {
 }
 
 .skill {
-    width: 180px;
     background-color: #003466;
     border: 2px solid #ffc425;
-    padding: 15px;
     margin: 10px;
     text-align: center;
 }
@@ -248,15 +173,10 @@ td {
     color: #ffffff;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-
 .project {
     border: 2px solid #003466;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .projectimages {
@@ -300,20 +220,13 @@ td {
     line-height: 1.8;
 }
 
-.note {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 40%;
-    font-size: 13px;
-    color: #ffffff;
+.contact {
+    text-align: right;
 }
 
-.contact {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-align: right;
+.note {
+    font-size: 13px;
+    color: #ffffff;
 }
 
 .contact h3 {

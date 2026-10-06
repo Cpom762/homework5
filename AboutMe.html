@@ -3,49 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Master.css">
     <title>About Me</title>
 </head>
 <body>
 
-    <header>
-        <h1>Christian Phillip Olsen</h1>
-        <p>Software Engineering Student at Northern Arizona University</p>
+    <header class="bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Christian Phillip Olsen</h1>
+                    <p class="lead">Software Engineering Student at Northern Arizona University</p>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <div class="nav-contianer">
-        <nav>
-            <ul>
-                <li><a href="index.html">Summary</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Running.html">Running</a></li>
-                <li><a href="Poetry.html">Poetry</a></li>
-                <li><a href="Contact.html">Contact Information</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Summary</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutMe.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="Education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="Skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="Projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="Running.html">Running</a></li>
+                <li class="nav-item"><a class="nav-link" href="Poetry.html">Poetry</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Information</a></li>
             </ul>
-            <a class="resume" href="https://docs.google.com/document/d/1mn1eNetuWI7vO4YYlXjGNv_hZwvM4GlTqqZtdAN6zBE/export?format=pdf">Download Resume</a>
-        </nav>
-        <div class="nav-button"> NAV </div>
-    </div>
+            <a class="resume btn btn-warning" href="https://docs.google.com/document/d/1mn1eNetuWI7vO4YYlXjGNv_hZwvM4GlTqqZtdAN6zBE/export?format=pdf">Download Resume</a>
+        </div>
+    </nav>
 
-    <main>
+    <main class="container">
+        <div class="row">
+            <div class="col">
         <h2>About Me</h2>
 
         <p>
             My name is Christian Phillip Olsen and i am a software engineering major. I run ultra marathons, hike, i have done DJ gigs, code, 3d modeling in CAD, develop games, love to paddle board, i do SEO marketing for work, and i do video editing. I won 2nd in the state of AZ for iot devices in SkillsUSA.
         </p>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p class="note">I have a very little amount of experience with HTML and CSS but not Javascript, Node, or SQL so i am VERY excited to learn!</p>
-
-        <div class="contact">
-            <h3>Contact Information</h3>
-            <p>Gmail: <a href="mailto:cpom762@gmail.com">cpom762@gmail.com</a></p>
-            <p>School: <a href="mailto:cpo59@nau.edu">cpo59@nau.edu</a></p>
-            <p>Discord: lonevex</p>
+    <footer class="bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="note">I have a very little amount of experience with HTML and CSS but not Javascript, Node, or SQL so i am VERY excited to learn!</p>
+                </div>
+                <div class="contact col-md-6">
+                    <h3>Contact Information</h3>
+                    <p>Gmail: <a href="mailto:cpom762@gmail.com">cpom762@gmail.com</a></p>
+                    <p>School: <a href="mailto:cpo59@nau.edu">cpo59@nau.edu</a></p>
+                    <p>Discord: lonevex</p>
+                </div>
+            </div>
         </div>
     </footer>
 
